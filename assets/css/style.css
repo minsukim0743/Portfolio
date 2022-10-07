@@ -1114,11 +1114,65 @@ section {
   }
 }
 
-.skills {
-  background-color: white;
+.skills,
+.portfolio {
+  background-color: #fafafa;
 }
 .skills h4 {
   padding-bottom: 25px;
   padding-top: 10px;
   color: #333;
+}
+.portfolio .img-fluid {
+
+}
+.portfolio .portfolio-links {
+  padding-bottom: 100px;
+}
+.portfolio .portfolio-links h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #050d18;
+}
+.portfolio .portfolio-links h3 + p {
+  padding-bottoM: 40px;
+  padding-top: 10px;
+}
+.portfolio .portfolio-links table:first-child {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+.portfolio .portfolio-links table {
+  border-bottom: 1px solid #ccc;
+}
+.portfolio .portfolio-links table th {
+  min-width: 100px;
+  padding: 15px 20px;
+  vertical-align: top;
+}
+.portfolio .portfolio-links table th:before {
+
+}
+.portfolio .portfolio-links table td {
+  width: 100%;
+  padding: 15px 20px;
+}
+.portfolio .portfolio-links table ul li {
+  padding-top: 15px;
+  line-height: 30px;
+  margin-left: -10px;
+}
+.portfolio .portfolio-links table:last-child td {
+  padding: 10px 20px;
+}
+.portfolio .xscroll-box {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+}
+.portfolio .xscroll-box > img {
+  width: auto;
+  max-height: 80vh;
+
 }
