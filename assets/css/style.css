@@ -1170,10 +1170,16 @@ section {
   width: 100%;
   padding: 15px 20px;
 }
-.portfolio .portfolio-links table ul li {
-  padding-top: 15px;
+.portfolio .portfolio-links ul li {
+  padding-bottom: 15px;
   line-height: 30px;
   margin-left: -10px;
+}
+.portfolio .portfolio-links > ul > li {
+  line-height: 40px;
+}
+.portfolio .portfolio-links table ul li:last-child {
+  padding-bottom: 0;
 }
 .portfolio .portfolio-links table:last-child td {
   padding: 10px 20px;
@@ -1188,5 +1194,28 @@ section {
   max-height: 80vh;
 }
 .portfolio .filter-Spring h4 {
-  margin-top: 50px;
+  margin-top: 40px;
+}
+#thanks {
+  height: 100vh;
+}
+#thanks h1 {
+  line-height: 60px;
+  position: relative;
+}
+#thanks h1:before {
+  display: block;
+  content: '❝';
+  position: absolute;
+  left: -80px;
+  top: -30px;
+  font-size: 60px;
+}
+#thanks h1:after {
+  display: block;
+  content: '❞';
+  position: absolute;
+  right: -60px;
+  bottom: -60px;
+  font-size: 60px;
 }
