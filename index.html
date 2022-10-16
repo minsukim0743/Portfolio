@@ -261,7 +261,7 @@
                 <p class="aos-init" data-aos="fade-up" data-aos-delay="100">
                   [ 치킨 프랜차이즈 회사 내의 가맹점과 본사의 유통을 간편하고 쉽게 파악할 수 있는 프로그램 ]<br>
                   <a style="color: #aaa; text-decoration: underline;" href="https://github.com/minsukim0743/final_chickenstock" target="_blank">https://github.com/minsukim0743/final_chickenstock</a><br>
-                  <span style="color: #aaa; font-size: 14px;">- 가맹점 테스트 ID : minsukim / PW: admin </span><br>
+                  <span style="color: #aaa; font-size: 14px;">- 가맹점 테스트 ID : chickenstock / PW: store </span><br>
                   <span style="color: #aaa; font-size: 14px;">- 관리자 테스트 ID : minsukim / PW: admin </span>
                 </p>
                 <img src="assets/img/chickenStock.JPG" class="img-fluid aos-init" data-aos="fade-up"
@@ -344,7 +344,7 @@
                       <th>Github</th>
                       <td><a style="text-decoration: underline; margin-top: 5px;margin-bottom: 10px; display: block;" href="https://github.com/minsukim0743/final_chickenstock" target="_blank">https://github.com/minsukim0743/final_chickenstock</a>
                         [프로젝트 실행 시 아래 테스트 ID로 접속]<br>
-                        <span style="color: #aaa; font-size: 14px;">- 가맹점 테스트 ID : minsukim / PW: admin </span><br>
+                        <span style="color: #aaa; font-size: 14px;">- 가맹점 테스트 ID : chickenstock / PW: store </span><br>
                         <span style="color: #aaa; font-size: 14px;">- 관리자 테스트 ID : minsukim / PW: admin </span><br><br></td>
                     </tr>
                     </tbody>
@@ -373,33 +373,48 @@
                 <h4 class="aos-init" data-aos="fade-up" data-aos-delay="100">5. 기능 구현</h4><br>
                 <div class="col-lg-6">
                   <div class="resume-item aos-init" data-aos="fade-up" data-aos-delay="100">
-                    <h5>[ 공통 주요 기능 ]</h5>
+                    <h5>[ 메인 페이지 ]</h5>
                     <ul>
-                      <li><strong>메인페이지 공지사항 리스트 (package명)</strong> : Ajax를 사용하여 공지사항 글 5개를 출력, +더 보기 클릭 시 공지사항 리스트 페이지로
+                      <li><strong>메인페이지 공지사항 리스트 (관리자 / 가맹점)</strong> : Ajax를 사용하여 공지사항 글 5개를 출력, +더 보기 클릭 시 공지사항 리스트 페이지로
                         이동합니다.</li>
-                      <li><strong>공지사항 조회</strong> : 전체 공지사항 글 조회 및 키워드별 검색이 가능하며, 한 페이지당 조회 개수를 6개로 설정하여 초과 시 다음 페이지로 이동하게 만들었고
-                        클릭 시 조회 수가 증가합니다.</li>
-                      <li><strong>공지사항 상세페이지</strong> : 공지사항 상세페이지를 확인할 수 있고, 첨부파일 다운로드가 가능합니다.</li>
                     </ul>
                   </div>
                   <div class="resume-item aos-init" data-aos="fade-up" data-aos-delay="100">
-                    <h5>[ 사용자 주요 기능 ]</h5>
+                    <h5>[ 공지사항(Notice) ]</h5>
                     <ul>
-                      <li><strong>메인페이지 공지사항 리스트 (package명)</strong> : Ajax를 사용하여 공지사항 글 5개를 출력, +더 보기 클릭 시 공지사항 리스트 페이지로
-                        이동합니다.</li>
-                      <li><strong>공지사항 조회</strong> : 전체 공지사항 글 조회 및 키워드별 검색이 가능하며, 한 페이지당 조회 개수를 6개로 설정하여 초과 시 다음 페이지로 이동하게 만들었고
+                      <li><strong>공지사항 조회 (관리자 / 가맹점)</strong> : 전체 공지사항 글 조회 및 키워드별 검색이 가능하며, 한 페이지당 조회 개수를 6개로 설정하여 초과 시 다음 페이지로 이동하게 만들었고
                         클릭 시 조회 수가 증가합니다.</li>
-                      <li><strong>공지사항 상세페이지</strong> : 공지사항 상세페이지를 확인할 수 있고, 첨부파일 다운로드가 가능합니다.</li>
+                      <li><strong>공지사항 상세페이지 (관리자 / 가맹점)</strong> : 공지사항 상세페이지를 확인할 수 있고, 첨부파일 다운로드가 가능합니다.</li>
+                      <li><strong>공지사항 작성 (관리자)</strong> : 공지사항을 작성할 수 있고 첨부파일 업로드가 가능합니다.</li>
+                      <li><strong>공지사항 수정 / 삭제 (관리자)</strong> : #authentication.getPrincipal()를 사용하여 글 작성한 사람과 로그인한 계정이 동일해야 수정 / 삭제 가능하게
+                        만들었습니다.</li>
                     </ul>
                   </div>
                   <div class="resume-item aos-init" data-aos="fade-up" data-aos-delay="100">
-                    <h5>[ 관리자 주요 기능 ]</h5>
+                    <h5>[ 1:1 문의(Counsel) ]</h5>
                     <ul>
-                      <li><strong>메인페이지 공지사항 리스트 (package명)</strong> : Ajax를 사용하여 공지사항 글 5개를 출력, +더 보기 클릭 시 공지사항 리스트 페이지로
-                        이동합니다.</li>
-                      <li><strong>공지사항 조회</strong> : 전체 공지사항 글 조회 및 키워드별 검색이 가능하며, 한 페이지당 조회 개수를 6개로 설정하여 초과 시 다음 페이지로 이동하게 만들었고
-                        클릭 시 조회 수가 증가합니다.</li>
-                      <li><strong>공지사항 상세페이지</strong> : 공지사항 상세페이지를 확인할 수 있고, 첨부파일 다운로드가 가능합니다.</li>
+                      <li><strong>1:1 문의 조회 (관리자 / 가맹점)</strong> : 1:1 문의 리스트를 조회할 수 있습니다.</li>
+                      <li><strong>1:1 문의 상세페이지 (관리자 / 가맹점)</strong> : 문의 답변 상태 대기 시 답변 내용이 없고 답변 완료 시 답변 내용이 보이게 만들었습니다.</li>
+                      <li><strong>1:1 문의 답변 등록 (관리자)</strong> : 관리자는 가맹점이 등록한 1:1 문의 리스트를 조회하여 답변을 등록할 수 있습니다.</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <h5>[ 가맹점 관리(Store) ]</h5>
+                    <ul>
+                      <li><strong>가맹점 조회 (관리자 / 가맹점)</strong> : 전체 가맹점 리스트를 조회할 수 있습니다.</li>
+                      <li><strong>가맹점 등록 (관리자)</strong> : 관리자는 신규 가맹점을 등록할 수 있고 가맹점의 초기 아이디와 비밀번호를 설정하여 전달해 주며 주소는 카카오 지도 API를
+                        사용하였습니다.</li>
+                      <li><strong>가맹점 정보 수정/삭제 (관리자)</strong> : 관리자는 가맹점 정보를 수정할 수 있고 폐점 시 가맹점 정보를 삭제할 수 있습니다.</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <h5>[ 예치금 관리(Account) ]</h5>
+                    <ul>
+                      <li><strong>입금신청 (가맹점)</strong> : 모달창을 사용하여 본사에 입금 신청하여 승인 시 잔액이 충전됩니다.</li>
+                      <li><strong>입금신청 승인 / 반려 (관리자)</strong> : 가맹점에서 입금 신청한 내역을 조회하여 승인 및 반려를 할 수 있고 한 페이지당 조회 개수를 6개로 설정하여 초과 시 다음 페이지로
+                        이동하게 만들었습니다.</li>
+                      <li><strong>입/출금 내역 조회 (가맹점)</strong> : 가맹점은 발주 및 반품을 할 시 입출금 기록을 남겨 조회할 수 있습니다.</li>
+                      <li><strong>가맹점 잔액 조회 (관리자)</strong> : 관리자는 전체 가맹점의 잔액을 조회할 수 있습니다.</li>
                     </ul>
                   </div>
                 </div>
